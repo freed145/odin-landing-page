@@ -5,12 +5,16 @@ body {
   font-family: 'Roboto';
 }
 
+h1, p {
+  margin: 0;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  padding: 15px 15%;
+  padding: 15px 15% 0px 15%;
   background: #1F2937;
 }
 
@@ -37,22 +41,14 @@ body {
   display: flex;
   align-items: center;
   gap: 50px;
-  padding: 50px 15%;
+  padding: 100px 15%;
   background: #1F2937;
-}
-
-.content-one-left {
 }
 
 .content-one h1 {
   font-size: 48px;
   font-weight: 900;
   color: #F9FAF8;
-  margin: 0;
-}
-
-.content-one p {
-  margin: 0;
 }
 
 .sign-up {
@@ -60,12 +56,18 @@ body {
   padding: 8px 16px;
   border-radius: 8px;
   background: #3882F6;
-  border: 1px #3882F6;
   color: white;
+  font-size: 18px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.content-one .sign-up {
+  border: 1px solid #3882F6;
 }
 
 .content-one-right {
-  flex-basis: 800px;
+  flex-basis: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,14 +77,15 @@ body {
 }
 
 .content-two {
-  padding: 50px 15%;
-  border: solid 2px red;
+  padding: 37px 15% 100px;
 }
 
 .content-two > .container {
   display: flex;
-  gap: 25px;
+  justify-content: center;
+  gap: 50px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .content-two h1 {
@@ -90,24 +93,62 @@ body {
   font-weight: 900;
   color: #1F2937;
   text-align: center;
+  margin-bottom: 37px;
+}
+
+.info {
+  max-width: 200px;
+}
+
+.info-img {
+  width: 200px;
+  height: 200px;
+  border: solid 2px #3882F6;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .content-three {
-  padding: 50px 15%;
+  padding: 100px 20% 76px 20%;
   background: #E5E7EB;
-  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-three .quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.content-three .citation {
+  font-size: 24px;
+  align-self: flex-end;
 }
 
 .content-four {
+  padding: 80px 15%;
+}
+
+.content-four .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 30px;
   align-items: center;
-  padding: 50px 15%;
-  border: solid 2px red;
+  border-radius: 8px;
+  background: #3882F6;
+  border: 1px #3882F6;
+  color: white;
+  padding: 30px;
+}
+
+.content-four .sign-up {
+  border: 1px solid white;
 }
 
 .footer {
-  border: solid 2px red;
+  padding: 30px;
   color: #E5E7EB;
   background: #1F2937;
   text-align: center;
